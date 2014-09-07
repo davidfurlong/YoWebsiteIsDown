@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:700,400">
+		<title>YoWebsiteIsDown</title>
+		<style>
+			body, html {
+
+			}
+			* {
+				font-family: 'Montserrat', arial, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			center {
+				color: white;
+				font-size: 70pt;
+			}
+			@media (max-width: 600px) {
+			  center {
+			  	color: white;
+			  	font-size: 20pt;
+			  }
+			}
+			input[type="text"] {
+				display: block;
+				width: 100%;
+				font-size: 50pt;
+				outline: none;
+				background: transparent;
+				height: 100px;
+				margin:0;
+				border: 10px solid white;
+				border-bottom: 0;
+				color: purple;
+				padding: 50px;
+				box-sizing: border-box;
+			}
+			input[type="submit"]{
+				font-size: 50pt;
+				padding: 50px;
+				color: white;
+				border: 10px solid white;
+				background: transparent;
+				cursor: pointer;
+				outline: none;
+				width: 100%;
+				text-align: center;
+			}
+			input[type="submit"]:hover {
+				background: rgba(256,256,256,0.2);
+			}
+			input[type="submit"]:active {
+				color: purple;
+			}
+			.spectrum:after {
+				box-sizing: border-box;
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;	
+				z-index: -1;
+				background:
+					linear-gradient(
+						limegreen,
+						transparent
+					),
+					linear-gradient(
+						90deg,
+						skyblue,
+						transparent
+					),
+					linear-gradient(
+						-90deg,
+						coral,
+						transparent
+					);	
+			}
+		</style>
+	</head>
+	<body class="spectrum">
+		<center>YoWebSiteIsDown</center>
+		<form action="/myaction" method="post">
+			<input type="text" id="url" name="url" placeholder="url">
+			<input type="text" id="username" name="username" placeholder="Yo username">
+			<input type="submit" value="Yo">
+		</form>
+	</body>
+</html>
